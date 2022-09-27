@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pudding</title>
+    <style>
+      body {
+        background: #fcf4d9;
+      }
+      .container {
+        max-width: 820px;
+        margin: 20px auto;
+        padding: 40px 15px;
+        background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+        border-radius: 8px;
+      }
+
+      .heading {
+        font-size: 34px;
+        text-align: center;
+        color: #fff;
+        margin: 0 0 30px;
+        padding: 15px 0;
+        border: 1px solid #a55233;
+        border-radius: 5px;
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #a55233;
+      }
+
+      .img {
+        display: block;
+        width: 500px;
+        height: 550px;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+
+      .info {
+        font-size: 18px;
+        line-height: 1.3em;
+        margin: 20px 0 10px;
+      }
+
+      .link {
+        display: inline-block;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 15px;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+
+      .button {
+        display: block;
+        margin: 10px auto 0;
+        padding: 15px 30px;
+        font-size: 20px;
+        background: #ab6b47;
+        border: 1px solid #5f2f14;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .button:hover {
+        background: #fff;
+        color: #a55233;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">I love Pudding</h1>
+      <h2 class="title">Homemade Chocolate Pudding</h2>
+      <img class="img" src="https://www.jocooks.com/wp-content/uploads/2020/08/chocolate-pudding-1-10-768x960.jpg" alt="Pudding" />
+      <p class="info">
+        Pudding is such an embarrassingly easy recipe to master, I don’t know if you’ll ever go back to the boxed variety. The ingredient list is so short, so basic, and the only skill required of you is whisking. It’s the type of dessert you can enjoy as basic or extravagantly topped as you like! <br />
+        <br />
+        You can also use this recipe to whip up other layered desserts such as trifles. Everything is better homemade, right? This is a dessert that has always been close to my heart. Topped with some berries and whipped cream? Now that’s a treat! What a wonderfully easy recipe you’d even be proud to serve guests.
+      </p>
+      <a class="link" href="https://www.thepioneerwoman.com/food-cooking/recipes/a85701/how-to-make-chocolate-pudding/" target="_blank">Learn more</a>
+
+      <button class="button">Try Chocolate Pudding</button>
+    </div>
+
+    <script>
+      const btnTry = document.querySelector(".button");
+      btnTry.addEventListener("click", function () {
+        let firstName = prompt("What is your name?");
+        let emailAdress = prompt("What is your email adress?");
+        if (firstName.length > 0) {
+          alert(`Thank you, ${firstName}! We'll be in touch by email, meanwhile have a lot of Pudding!`);
+        } else {
+          alert("No name, no Chocolate Pudding for you!");
+        }
+      });
+    </script>
+  </body>
+</html>
